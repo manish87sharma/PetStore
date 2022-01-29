@@ -1,0 +1,106 @@
+
+
+// user
+
+api 
+/login 
+/registration
+
+/Registration - Post
+
+name - unique name 
+email - email validation
+Password -length validation 
+confirmPassword - length validation
+
+
+/login -post
+
+name
+Password 
+
+return - jwt token
+
+Authorization -Bearer <token>
+
+
+// store 
+
+add
+remove 
+
+
+/list - get 
+return 
+array of items
+[
+    {
+        name:
+        Description
+        availabilty:
+        Price:
+        category:
+        user
+        img
+    }
+]
+
+/add - post
+type -json
+    {
+    name
+    Description
+    Price
+    category
+    quantity
+    img
+    }
+
+/remove  - put
+// validation his items only he can delete
+store/remove/:id
+
+// update
+{
+    Description
+    name
+    quantity
+    image
+    Price
+    img
+}
+
+
+//cart
+
+// calculateprice - post
+[
+    
+    {
+        name:
+        quantity:2
+        id:
+    }
+]
+
+// todo availabilty
+return -> price
+
+
+
+//:id - Post
+{
+    quantity
+    name
+}
+
+// reducing the quantity 
+
+// shipping service
+// payment service
+// user service
+// recommendation service -> which will use the some elastic search
+// feedback-reviews
+// kafka - integration for dynamic notification
+// test cases
+
